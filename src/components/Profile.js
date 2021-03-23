@@ -1,13 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Profile = ({
-  avatar,
-  name,
-  tag,
-  location,
-  // stats: { followers, views, likes },
-}) => (
+const Profile = ({ avatar, name, tag, location, followers, views, likes }) => (
   <div className="profile">
     <div className="description">
       <img src={avatar} alt="Аватар пользователя" className="avatar" />
@@ -15,20 +9,20 @@ const Profile = ({
       <p className="tag">{tag}</p>
       <p className="location">{location}</p>
     </div>
-    {/* <ul className="stats">
+    <ul className="stats">
       <li>
-        <span className="label">Followers </span>
-        <span className="quantity">{followers}</span>
+        <span className="label">Followers</span>
+        <span className="quantity"> {followers}</span>
       </li>
       <li>
-        <span className="label">Views </span>
-        <span className="quantity">{views}</span>
+        <span className="label">Views</span>
+        <span className="quantity"> {views}</span>
       </li>
       <li>
-        <span className="label">Likes </span>
-        <span className="quantity">{likes}</span>
+        <span className="label">Likes</span>
+        <span className="quantity"> {likes}</span>
       </li>
-    </ul> */}
+    </ul>
   </div>
 );
 export default Profile;
