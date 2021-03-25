@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 const Profile = ({ avatar, name, tag, location, followers, views, likes }) => (
